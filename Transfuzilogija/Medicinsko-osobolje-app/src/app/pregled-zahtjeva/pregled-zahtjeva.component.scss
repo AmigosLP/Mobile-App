@@ -1,0 +1,86 @@
+:host
+{
+    background-color: #192b34;
+}
+#sve
+{
+    overflow: scroll;
+}
+#naslov
+{
+    text-align: center;
+    font-weight: bold;
+    font-family: "poppins";
+    margin-top: 5%;
+}
+#grupa
+{
+    
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15%;
+    position: sticky;
+    
+    
+    
+}
+#nesto
+{
+    color: white;
+    font-weight: bold;
+    
+   
+}
+#button
+{
+    color: white;
+    font-weight: bold;
+     
+}
+#donji
+{
+  
+   
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+    
+}
+#gornji
+{
+  
+  top: 0; 
+  width: 100%; 
+  justify-content: space-between;
+  float: right;
+  position: fixed;
+}
+#net
+{
+   position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#wifi
+{
+  position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#bat
+{
+  position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#vre
+{
+  position: relative;
+  float: left;
+  margin-left: 1%;
+  margin-top: 1%;
+}

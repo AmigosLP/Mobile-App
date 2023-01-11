@@ -1,0 +1,59 @@
+<div id="sve">
+  <div id="gornji">
+    <ion-icon id="vre"  name="time"></ion-icon>
+    <ion-icon id="bat" name="battery-half"></ion-icon>
+    <ion-icon id="net" name="cellular"></ion-icon>
+    <ion-icon id="wifi" name="wifi"></ion-icon>
+  
+  </div>
+  <div id="glavni">
+   
+    <div id="slika">
+
+      <img src="/assets/icon/slika.PNG" alt="">
+    </div>
+  
+    <div id="dugmic">
+
+      <ion-button expand="block" id="zakaziTermin" [routerLink]="['/listaPacijenata']">Pregled danasnjih pacijenata</ion-button>
+      <ion-button expand="block" id="prethodniTermini" [routerLink]="['/pregledZahtjeva']">Pregled zahtjeva</ion-button>
+
+
+    </div>  
+
+
+  </div>
+
+  <div id="donji">
+
+    <ion-toolbar>
+      
+      <ion-tabs>
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button>
+            <ion-icon name="home"></ion-icon>
+            <ion-label >Pocetna</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button>
+            <ion-icon name="settings" [routerLink]="['/postavke']"></ion-icon>
+            <ion-label>Postavke</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button>
+            <ion-icon name="person" [routerLink]="['/korisnickiNalog']"></ion-icon>
+            <ion-label>Nalog</ion-label>
+          </ion-tab-button>
+      
+         
+        </ion-tab-bar>
+      </ion-tabs>
+  
+    </ion-toolbar>
+
+  </div>
+
+
+
+
+</div>
