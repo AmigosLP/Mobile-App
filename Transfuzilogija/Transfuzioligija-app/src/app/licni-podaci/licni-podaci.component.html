@@ -1,0 +1,45 @@
+<div id="sve">
+  <div id="gornji">
+    <ion-icon id="vre"  name="time"></ion-icon>
+    <ion-icon id="bat" name="battery-half"></ion-icon>
+    <ion-icon id="net" name="cellular"></ion-icon>
+    <ion-icon id="wifi" name="wifi"></ion-icon>
+  
+  </div>
+  <div id="naslov">
+    <h1>Licni podaci</h1>
+  </div>
+  <div id="glavni">
+
+    <ion-list>
+      <ion-item >
+        <ion-label >Ime:</ion-label>
+        <ion-input readonly placeholder="Faris"></ion-input>
+      </ion-item>
+    
+      <ion-item >
+        <ion-label>Prezime:</ion-label>
+        <ion-input readonly placeholder="Siocic"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label >Br. legitimacija :</ion-label>
+        <ion-input readonly placeholder="123xxx32"></ion-input>
+      </ion-item>
+    
+      <ion-item >
+        <ion-label>Krva grupa:</ion-label>
+        <ion-input readonly placeholder="0-Pozitivna"></ion-input>
+      </ion-item>
+          
+    </ion-list>
+  </div>
+  <div id="dugmic">
+
+    
+    <ion-button expand="block" id="vratiSe" [routerLink]="['/KorisnickiNalog']">Vrati se</ion-button>
+
+
+  </div>  
+
+</div>

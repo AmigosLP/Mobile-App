@@ -53,27 +53,39 @@ h1
 {
     font-weight: bold;
     font-family: "poppins";
-    padding-bottom: 5%;
+    padding-top: 10%;
     
     
 }
-#donji
-{
-    margin-top: 22%;
-    position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-#slika
-{
-    width: 50%;
-    margin-left:20%;
-    margin-top: 5%;
 
-
-}
 #Odjava
+{
+    --background:#D9d9d9;
+    color: #192B34;
+     
+    font-weight: bold;
+    font-family: "poppins";
+    margin-top: 55%;
+}
+#LicniPodaci
+{
+    --background:#D9d9d9;
+    color: #192B34;
+     margin-top: 5%;
+    font-weight: bold;
+    font-family: "poppins";
+    margin-top: 15%;
+}
+#Privatnost
+{
+    --background:#D9d9d9;
+    color: #192B34;
+     margin-top: 5%;
+    font-weight: bold;
+    font-family: "poppins";
+  
+}
+#Nazad
 {
     --background:#D9d9d9;
     color: #192B34;
@@ -90,6 +102,7 @@ h1
   justify-content: space-between;
   float: right;
   position: fixed;
+ 
 }
 #net
 {

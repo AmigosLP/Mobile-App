@@ -1,43 +1,57 @@
-:host
+#sve
 {
-  background-color: #192B34;
+    background-color: #192B34;
+    width: 100%;
+    height: 100%;
 
+}
+
+h1
+{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'poppins';
+    padding-top: 40%;
+    padding-bottom: 20;
 }
 #dugmic
 {
-  margin-top:40%;
+  
  text-align: center;
- margin-left: 25%;
- width: 50%;
+ margin-left: 15%;
+ width: 70%;
+ padding-top: 10%;
+ 
  
 }
-#prijava
+#DetaljniZahtjev
 {
   --background:#D9d9d9;
   color: #192B34;
   font-family: "poppins";
-  margin-top: 2%;
+  margin-top: 20%;
   font-weight: bold; 
 }
-#registacija
+#vratiSe
 {
   --background:#D9d9d9;
   color: #192B34;
-  margin-top: 5%;
+  margin-top: 10%;
   font-weight: bold; 
   font-family: "poppins";
 }
-#onama
+#donji
 {
-  --background:#D9d9d9;
-  color: #192B34;
-  margin-top: 5%;
-  font-weight: bold; 
-  font-family: "poppins";
+    margin-top: 22.4%;
+    
+    
 }
 #slika
 {
-  margin-top: 20%;
+    margin-left: 30%;
+    margin-top: 30%;
+
+
 }
 #gornji
 {
@@ -47,7 +61,6 @@
   justify-content: space-between;
   float: right;
   position: fixed;
- 
 }
 #net
 {

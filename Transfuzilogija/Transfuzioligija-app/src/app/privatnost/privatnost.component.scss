@@ -1,86 +1,66 @@
+:host
+{
+    background-color: #192b34;
+}
 #sve
 {
-    background-color: #192B34;
-    width: 100%;
-    height: 100%;
+    text-align: center;
+    margin-top: 15%;
 }
 #glavni
 {
-    text-align:  center;
-    margin-top: 10%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25%;
+}
 
-   
-}
-#zakaziTermin
+#vratiSe
 {
     --background:#D9d9d9;
     color: #192B34;
     font-weight: bold;
-    margin-top: 5%;
+    font-family: "poppins";
+    margin-top: 30%;
 }
-#prethodniTermini
+#Email
+{
+    --background:#D9d9d9;
+    color: #192B34;
+    font-weight: bold;
+    font-family: "poppins";
+    margin-top: 30%;
+}
+#Lozinka
 {
     --background:#D9d9d9;
     color: #192B34;
     font-weight: bold;
     font-family: "poppins";
     margin-top: 5%;
-}
-#pregledajNalaz
-{
-    --background:#D9d9d9;
-    color: #192B34;
-     margin-top: 5%;
-    font-weight: bold;
-    font-family: "poppins";
-}
-#dugmic
-{
-    text-align: center;
-    margin-top: 17%;
-    width: 70%;
-    font-weight: bold;
-    font-family: "poppins";
-    margin-left: 15%;
-  
-}
-#korisnik
-{
-    margin-top: 90%;
-    margin-left: 90%;
 }
 h1
 {
     font-weight: bold;
-    font-family: "poppins";
-    padding-bottom: 5%;
-    
-    
-}
-#donji
-{
-    margin-top: 22%;
-    position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-#slika
-{
-    width: 50%;
-    margin-left:20%;
-    margin-top: 5%;
-
+    font-style: "poppins";
 
 }
-#Odjava
+#dugmic
 {
-    --background:#D9d9d9;
-    color: #192B34;
-     margin-top: 5%;
+    text-align: center;
+    
+    width: 80%;
     font-weight: bold;
     font-family: "poppins";
-    margin-top: 15%;
+    margin-left: 10%;
+  
+    
+}
+.item
+{
+    --background:#D9d9d9;
+    color: black;
+    font-weight: bold;
+    border-radius: 1px 1px 1px 1px;
 }
 #gornji
 {
@@ -119,3 +99,4 @@ h1
   margin-left: 1%;
   margin-top: 1%;
 }
+

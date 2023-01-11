@@ -6,24 +6,39 @@
     <ion-icon id="wifi" name="wifi"></ion-icon>
   
   </div>
-  <h1>Odaberi datum i vrijeme</h1>
-  <div id="datum">
-        <ion-datetime
-        value="2023-04-21T00:00:00"
-        min="2023-01-01T00:00:00"
-        max="2025-12-31T23:59:59"
-      ></ion-datetime>
+  <div id="glavni">
 
-  </div>
-
-  <div id="dugmic">
-      
-      
-    <ion-button id="zakaziTermin" expand="block" [routerLink]="['/UspjesnoZakazano']">Zakazi termin</ion-button>
-    <ion-button id="vratiSe" expand="block" [routerLink]="['/glavnaStranica']">Nazad</ion-button>
- 
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Evidencija o darivanju krvi</ion-card-title>
+        <br>
+        <br>
+        <br>
+        <ion-card-subtitle>Detalji zadnjeg darivanja krvi korisnika</ion-card-subtitle>
+      </ion-card-header>
     
+      <ion-card-content>
+        <b>Mjesto: </b>Odjel transfuzije Tuzla <br>
+        <br>
+        <b>Datum: </b>17.1.2023.<br>
+        <br>
+        <b>Kolicina dobrovoljne date krvi:</b> 450 mililitara <br>
+        <br>
+        <b>Odgovorni doktor:</b> Dr. Karlo Ivic
+
+      </ion-card-content>
+    </ion-card>
+
+    <div id="dugmic">
+
+      <ion-button expand="block" id="pregledajNalaz" [routerLink]="['/glavnaStranica']">Nazad</ion-button>
+
+
+    </div>  
+
+
   </div>
+
   <div id="donji">
 
     <ion-toolbar>
@@ -32,7 +47,7 @@
         <ion-tab-bar slot="bottom">
           <ion-tab-button>
             <ion-icon name="home"></ion-icon>
-            <ion-label [routerLink]="['/glavnaStranica']">Pocetna</ion-label>
+            <ion-label >Pocetna</ion-label>
           </ion-tab-button>
       
           <ion-tab-button>
@@ -52,5 +67,5 @@
     </ion-toolbar>
 
   </div>
-<script src="index.js"></script>
+
 </div>

@@ -6,6 +6,17 @@ import { RegistacijaComponent } from './registacija/registacija.component';
 import { OAplikacijiComponent } from './o-aplikaciji/o-aplikaciji.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ZakaziTerminComponent } from './zakazi-termin/zakazi-termin.component';
+import { UspjesnoZakazanoComponent } from './uspjesno-zakazano/uspjesno-zakazano.component';
+import { DetaljniZahtjevComponent } from './detaljni-zahtjev/detaljni-zahtjev.component';
+import { PrethodniTerminiComponent } from './prethodni-termini/prethodni-termini.component';
+import { SlikaTerminComponent } from './slika-termin/slika-termin.component';
+import { IskaznicaComponent } from './iskaznica/iskaznica.component';
+import { UspjesnoRegistrovanoComponent } from './uspjesno-registrovano/uspjesno-registrovano.component';
+import { KorisnickiNalogComponent } from './korisnicki-nalog/korisnicki-nalog.component';
+import { LicniPodaciComponent } from './licni-podaci/licni-podaci.component';
+import { PrivatnostComponent } from './privatnost/privatnost.component';
+import { PostavkeComponent } from './postavke/postavke.component';
+
 
 const routes: Routes = [
   {
@@ -32,7 +43,38 @@ const routes: Routes = [
   },
   {
     path:'zakaziTermin',component:ZakaziTerminComponent
+  },
+  {
+    path:'UspjesnoZakazano',component:UspjesnoZakazanoComponent
+  },
+  {
+    path:"DetaljniZahtjev",component:DetaljniZahtjevComponent
+  },
+  {
+    path:"PrethodniTermini",component:PrethodniTerminiComponent
+  },
+  {
+    path:"SlikaTermin",component:SlikaTerminComponent
+  },
+  {
+    path:"Iskaznica",component:IskaznicaComponent
+  },
+  {
+    path:"UspjesnoRegistrovano",component:UspjesnoRegistrovanoComponent
+  },
+  {
+   path:"KorisnickiNalog",component:KorisnickiNalogComponent
+  },
+  {
+    path:"LicniPodaci",component:LicniPodaciComponent
+  },
+  {
+    path:"Privatnost",component:PrivatnostComponent
+  },
+  {
+    path:"Postavke",component:PostavkeComponent
   }
+ 
 ];
 
 @NgModule({

@@ -1,0 +1,37 @@
+<div id="sve">
+  <div id="gornji">
+    <ion-icon id="vre"  name="time"></ion-icon>
+    <ion-icon id="bat" name="battery-half"></ion-icon>
+    <ion-icon id="net" name="cellular"></ion-icon>
+    <ion-icon id="wifi" name="wifi"></ion-icon>
+  
+  </div>
+  <div id="naslov">
+    <h1>Privatnost</h1>
+  </div>
+  <div id="glavni">
+
+    <ion-list>
+      <ion-item >
+        <ion-label >Email: </ion-label>
+        <ion-input readonly placeholder="faris.siocic@edu.fit.ba"></ion-input>
+      </ion-item>
+    
+      <ion-item >
+        <ion-label>Lozinka:</ion-label>
+        <ion-input readonly placeholder="********"></ion-input>
+      </ion-item>
+    
+    </ion-list>
+  </div>
+  <div id="dugmic">
+
+    
+    <ion-button expand="block" id="Email">Promjeni E-mail</ion-button>
+    <ion-button expand="block" id="Lozinka">Promjeni lozinku</ion-button>
+    <ion-button expand="block" id="vratiSe" [routerLink]="['/KorisnickiNalog']">Vrati se</ion-button>
+
+
+  </div>  
+
+</div>
