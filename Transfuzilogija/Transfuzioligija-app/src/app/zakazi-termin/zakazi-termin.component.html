@@ -1,0 +1,22 @@
+<div id="sve">
+
+  <h1>Odaberi datum i vrijeme</h1>
+  <div id="datum">
+        <ion-datetime
+        value="2022-04-21T00:00:00"
+        min="2022-03-01T00:00:00"
+        max="2022-05-31T23:59:59"
+      ></ion-datetime>
+
+  </div>
+
+  <div id="dugmic">
+      
+      
+    <ion-button id="zakaziTermin" expand="block" [routerLink]="['/login']">Zakazi termin</ion-button>
+    <ion-button id="vratiSe" expand="block" [routerLink]="['/glavnaStranica']">Vrati se</ion-button>
+ 
+    
+  </div>
+
+</div>

@@ -1,0 +1,7 @@
+{
+  "name": "Transfuzioligija-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
