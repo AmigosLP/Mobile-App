@@ -1,0 +1,7 @@
+{
+  "name": "Medicinsko-osobolje-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

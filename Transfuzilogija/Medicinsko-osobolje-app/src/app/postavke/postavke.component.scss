@@ -1,0 +1,81 @@
+:host
+{
+    background-color: #192b34;
+}
+#naslov
+{
+    text-align: center;
+    
+}
+#sve
+{
+    margin-top: 5%;
+}
+.item
+{
+    --background:#D9d9d9;
+    color: black;
+    font-weight: bold;
+}
+#glavni
+{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+#vratiSe
+{
+    --background:#D9d9d9;
+    color: #192B34;
+    font-weight: bold;
+    font-family: "poppins";
+    margin-top: 5%;
+}
+
+#dugmic
+{
+    text-align: center;
+    margin-top: 2%;
+    width: 70%;
+    font-weight: bold;
+    font-family: "poppins";
+    margin-left: 15%;
+    
+}
+#gornji
+{
+  
+  top: 0; 
+  width: 100%; 
+  justify-content: space-between;
+  float: right;
+  position: fixed;
+}
+#net
+{
+   position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#wifi
+{
+  position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#bat
+{
+  position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#vre
+{
+  position: relative;
+  float: left;
+  margin-left: 1%;
+  margin-top: 1%;
+}

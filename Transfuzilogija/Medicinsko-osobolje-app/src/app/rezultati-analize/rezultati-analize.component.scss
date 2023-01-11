@@ -1,0 +1,82 @@
+:host
+{
+    background-color: #192b34;
+}
+#sve
+{
+  text-align: center;
+}
+#naslov
+{
+    margin-top: 15%;
+}
+textarea
+{
+    border: none;
+    outline: none;
+    background-color: white;
+    width: 50%;
+}
+#dugmic
+{
+    text-align: center;
+    margin-top: 3%;
+    width: 40%;
+    margin-left: 30%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#Dodajdokument
+{
+    --background:#D9d9d9;
+    color: #192B34;
+    font-weight: bold;
+    font-family: "poppins";
+    
+   
+}
+#Sacuvaj
+{
+    --background:#D9d9d9;
+    color: #192B34;
+    font-weight: bold;
+    font-family: "poppins";
+}
+#gornji
+{
+  
+  top: 0; 
+  width: 100%; 
+  justify-content: space-between;
+  float: right;
+  position: fixed;
+}
+#net
+{
+   position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#wifi
+{
+  position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#bat
+{
+  position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#vre
+{
+  position: relative;
+  float: left;
+  margin-left: 1%;
+  margin-top: 1%;
+}

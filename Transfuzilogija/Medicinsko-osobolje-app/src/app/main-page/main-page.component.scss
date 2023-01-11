@@ -1,0 +1,88 @@
+:host
+{
+    background-color: #192B34;
+}
+
+#glavni
+{
+    text-align:  center;
+    margin-top: 2%;
+}
+#zakaziTermin
+{
+    --background:#D9d9d9;
+    color: #192B34;
+    font-weight: bold;
+    font-family: "poppins";
+    margin-top: 2%;
+}
+#prethodniTermini
+{
+    --background:#D9d9d9;
+    color: #192B34;
+    font-weight: bold;
+    font-family: "poppins";
+    margin-top: 2%;
+}
+
+#dugmic
+{
+    text-align: center;
+    margin-top: 2%;
+    width: 70%;
+    font-weight: bold;
+    font-family: "poppins";
+    margin-left: 15%;
+  
+}
+
+h1
+{
+    font-weight: bold;
+    font-family: "poppins";
+}
+#donji
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+#gornji
+{
+  
+  top: 0; 
+  width: 100%; 
+  justify-content: space-between;
+  float: right;
+  position: fixed;
+}
+#net
+{
+   position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#wifi
+{
+  position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#bat
+{
+  position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#vre
+{
+  position: relative;
+  float: left;
+  margin-left: 1%;
+  margin-top: 1%;
+}
