@@ -8,7 +8,7 @@
     
     <div id="login">
 
-        <ion-item id="nesto">
+     <!--   <ion-item id="nesto">
             <ion-icon name="person"></ion-icon>
             <div id="div">
 
@@ -27,8 +27,45 @@
             </div>
 
        </ion-item>
-            
-       
+    -->
+      
+         <form [formGroup]="loginForm" (ngsubmit)="submit()" id="formica">
+           <ion-list id="lista">
+            <ion-item id="nesto">
+                <ion-icon name="person"></ion-icon>
+                <div id="div">
+                   <ion-input formControlName="brKartice" placeholder="Unesite Vas broj kartice"></ion-input>
+                </div>
+    
+            </ion-item>
+          <div *ngFor="let error of errorMessages.brKartice" id="greska">
+                <ng-container  *ngIf="brKartice?.hasError(error.type) && (brKartice?.dirty || brKartice?.touched)">
+                   <small id="greska">{{error.message}}</small>
+                </ng-container>
+
+            </div>
+            <ion-item  id="nesto">
+
+                <ion-icon name="key"></ion-icon>
+                <div id="div">
+                    
+                    <ion-input formControlName="lozinka" placeholder="Unesite Vasu lozinku" type="password"></ion-input>
+                 </div>
+     
+            </ion-item>
+             <div *ngFor="let error of errorMessages.lozinka" id="greska">
+                <ng-container *ngIf="lozinka!.hasError(error.type) && (lozinka!.dirty || lozinka!.touched)">
+                   <small id="greska">{{error.message}}</small>
+                </ng-container>
+
+            </div>
+         
+
+           </ion-list>
+
+         </form>
+
+     
        
        
     </div>
@@ -36,7 +73,7 @@
     
     <div id="dugmic">
         
-        <ion-button expand="block" id="prijava" [routerLink]="['/glavnaStranica']">Prijavi se</ion-button>
+        <ion-button expand="block" id="prijava" (click)="prijava()">Prijavi se</ion-button>
         <ion-button expand="block" id="vratiSe" [routerLink]="['/home']">Vrati se</ion-button>
         
     </div>

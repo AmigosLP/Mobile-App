@@ -4,6 +4,7 @@ import { RouteReuseStrategy, RouterLink, RouterLinkActive } from '@angular/route
 
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
 
 
 
@@ -30,7 +31,7 @@ import { PostavkeComponent } from './postavke/postavke.component';
 
 @NgModule({
   declarations: [AppComponent,LoginPageComponent,RegistacijaComponent,OAplikacijiComponent,MainPageComponent,ZakaziTerminComponent,UspjesnoZakazanoComponent,DetaljniZahtjevComponent,PrethodniTerminiComponent,SlikaTerminComponent,IskaznicaComponent,UspjesnoRegistrovanoComponent,KorisnickiNalogComponent,LicniPodaciComponent,PrivatnostComponent,PostavkeComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule,ReactiveFormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   //router:[RouterLink],
