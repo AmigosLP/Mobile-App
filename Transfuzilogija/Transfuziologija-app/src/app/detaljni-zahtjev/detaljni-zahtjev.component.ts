@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { resetFakeAsyncZone } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
@@ -13,6 +14,9 @@ export class DetaljniZahtjevComponent implements OnInit {
 
 
   }
+
+  
+  textarea:any;
 
   ngOnInit() {}
 
@@ -29,12 +33,15 @@ export class DetaljniZahtjevComponent implements OnInit {
           }
         }
       ],
-      
-           
+         
       
     });
 
     await alert.present();
+    this.textarea="";
+   
+    
+    
   }
 
 }

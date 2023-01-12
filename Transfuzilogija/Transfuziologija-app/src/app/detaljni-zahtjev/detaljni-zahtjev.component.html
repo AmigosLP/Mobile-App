@@ -8,17 +8,13 @@
   <div id="glavni">
    
 
-   <textarea  name="text" id="zahtjev" cols="50" rows="20">
-
-  
-
-   </textarea>
+   <textarea [(ngModel)]="textarea" name="text" id="zahtjev" cols="50" rows="20" placeholder="Molimo Vas unesite detaljne podatke o samom pregledu. Svrha pregleda, dodatne konsultacije, dobrovoljni pristup davanja krvi i slicno."></textarea>
 
   </div>
 
   <div id="dugmic">
 
-    <ion-button expand="block" id="prihvati" (click)="prihvati()">Potvrdi zahtjev</ion-button>
+    <ion-button expand="block" id="prihvati" (click)="prihvati()" >Potvrdi zahtjev</ion-button>
     <ion-button expand="block" id="odbij">Nazad</ion-button>
 
   </div>  
