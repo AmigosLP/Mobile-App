@@ -5,9 +5,14 @@
     
     
 }
+h1
+{
+    text-align: center;
+    margin-top: 20%;
+}
 #login
 {
-    margin-top: 45%;
+    margin-top: 30%;
     margin-left: 15%;
     width: 70%;
 }
@@ -23,6 +28,28 @@
     margin-top: 15%;
     width: 100%;
     margin-left: 0%;
+    
+}
+#nesto
+{
+    border-bottom: 1px solid white;
+   // display: flex;
+    margin-top: 5%;
+    margin-left: 0%;
+    --background:#192B34;
+    color: white;
+    font-weight: bold;
+  
+  
+  
+}
+#div
+{
+    padding-left: 5%;
+}
+.item
+{
+    padding-left: 0%;
     
 }
 #prijava
