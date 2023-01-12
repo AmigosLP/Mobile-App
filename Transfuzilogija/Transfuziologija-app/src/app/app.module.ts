@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy, RouterLink, RouterLinkActive } from '@angular/router';
 
+
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+
 
 
 
