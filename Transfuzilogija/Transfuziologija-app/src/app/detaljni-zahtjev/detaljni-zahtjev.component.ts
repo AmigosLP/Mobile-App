@@ -26,23 +26,11 @@ export class DetaljniZahtjevComponent implements OnInit {
     
     if(!this.textarea || this.textarea.length==0)
     {
-      const alert = await this.alertController.create({
-        header: 'Upozorenje!',
-        message: 'Morate unijeti zahtjev koji zelite!',
-        buttons: [
-          {
-            text:'OK',
-            handler:()=>
-            {
+     
               this.router.navigate(['/DetaljniZahtjev']);
-            }
-          }
-        ],
-           
         
-      });
+     
   
-      await alert.present();
     }
     else
     {
