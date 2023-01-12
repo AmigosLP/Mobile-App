@@ -23,15 +23,20 @@
            <ion-icon name="key"></ion-icon>
            <div id="div">
                
-               <ion-input placeholder="Unesite Vasu lozinku"></ion-input>
+               <ion-input placeholder="Unesite Vasu lozinku" type="password"></ion-input>
             </div>
 
        </ion-item>
             
        
-   
-    
+       
+       
     </div>
+    <div id="registracija">
+       <ion-button fill="clear">Nemate korisnicki nalog ? <a [routerLink]="['/registracija']" id="pomjeri"> Registruj se !</a></ion-button>
+    </div>
+
+
 <div id="dugmic">
 
     <ion-button expand="block" id="prijava" [routerLink]="['/glavnaStranica']">Prijavi se</ion-button>
