@@ -16,6 +16,7 @@ import { KorisnickiNalogComponent } from './korisnicki-nalog/korisnicki-nalog.co
 import { LicniPodaciComponent } from './licni-podaci/licni-podaci.component';
 import { PrivatnostComponent } from './privatnost/privatnost.component';
 import { PostavkeComponent } from './postavke/postavke.component';
+import { NeuspjesnoZakazanoComponent } from './neuspjesno-zakazano/neuspjesno-zakazano.component';
 
 
 const routes: Routes = [
@@ -73,6 +74,9 @@ const routes: Routes = [
   },
   {
     path:"Postavke",component:PostavkeComponent
+  },
+  {
+    path:"NeuspjesnoZakazano",component:NeuspjesnoZakazanoComponent
   }
  
 ];

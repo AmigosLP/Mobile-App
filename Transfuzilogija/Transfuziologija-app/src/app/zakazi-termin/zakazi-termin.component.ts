@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-zakazi-termin',
@@ -7,8 +9,49 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ZakaziTerminComponent implements OnInit {
 
-  constructor() { }
+  constructor( private alert:AlertController, private router:Router) {
 
-  ngOnInit() {}
+   }
+
+    odaberiDatum: any;
+
+    ngOnInit() {}
+
+  
+   async odabir()
+  {
+    console.log(this.odaberiDatum);
+    if(this.odaberiDatum=="2023-01-20T14:30:00+01:00")
+    
+    {
+      const alert = await this.alert.create({
+        header: 'Upozorenje!',
+        message: 'Termin je zauzet, pokusajte drugi',
+        buttons: [
+          {
+            text:'OK',
+            handler:()=>
+            {
+              this.router.navigate(['/zakaziTermin']);
+            }
+          }
+        ],
+           
+        
+      });
+      await alert.present();
+
+    }
+    else
+    {
+      this.router.navigate(['/UspjesnoZakazano'])
+
+
+
+    }
+
+  }
+
+
 
 }

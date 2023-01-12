@@ -3,6 +3,7 @@
   <h1>Odaberi datum i vrijeme</h1>
   <div id="datum">
         <ion-datetime
+        [(ngModel)]="odaberiDatum"
         value="2023-04-21T00:00:00"
         min="2023-01-01T00:00:00"
         max="2025-12-31T23:59:59"
@@ -13,9 +14,9 @@
   <div id="dugmic">
       
       
-    <ion-button id="zakaziTermin" expand="block" [routerLink]="['/UspjesnoZakazano']">Zakazi termin</ion-button>
+    <ion-button id="zakaziTermin" (click)="odabir()" expand="block">Zakazi termin</ion-button>
     <ion-button id="vratiSe" expand="block" [routerLink]="['/glavnaStranica']">Nazad</ion-button>
- 
+    
     
   </div>
   <div id="donji">
