@@ -13,7 +13,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 export class RegistacijaComponent implements OnInit {
 
   showPassword = false;
-  passwordToggleIcon='eye';
+  passwordToggleIcon='eye-off';
  
    
 

@@ -12,7 +12,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class LoginPageComponent  {
   showPassword = false;
-  passwordToggleIcon='eye';
+  passwordToggleIcon='eye-off';
 
     get brKartice()
     {
