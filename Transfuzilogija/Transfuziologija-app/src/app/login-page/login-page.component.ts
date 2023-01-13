@@ -11,7 +11,8 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./login-page.component.scss'],
 })
 export class LoginPageComponent  {
-
+  showPassword = false;
+  passwordToggleIcon='eye';
 
     get brKartice()
     {
@@ -49,7 +50,17 @@ export class LoginPageComponent  {
   {
     console.log(this.loginForm.value);
   }
-
+  togglePassword():void{
+    this.showPassword=!this.showPassword;
+    if(this.passwordToggleIcon=='eye-off')
+    {
+     this.passwordToggleIcon='eye'
+    }
+    else
+    {
+     this.passwordToggleIcon='eye-off';
+    }
+  } 
    async prijava()
   {
     if(this.brKartice?.value=="123456" && this.lozinka?.value==="nesto")

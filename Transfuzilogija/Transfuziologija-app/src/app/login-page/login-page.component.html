@@ -49,8 +49,9 @@
                 <ion-icon name="key"></ion-icon>
                 <div id="div">
                     
-                    <ion-input formControlName="lozinka" placeholder="Unesite Vasu lozinku" type="password"></ion-input>
+                    <ion-input formControlName="lozinka" placeholder="Unesite Vasu lozinku" [type]="showPassword?'text':'password'"></ion-input>
                  </div>
+                 <ion-icon class="show-option" [name]="passwordToggleIcon" (click)="togglePassword()"></ion-icon>
      
             </ion-item>
              <div *ngFor="let error of errorMessages.lozinka" id="greska">
@@ -73,7 +74,7 @@
     
     <div id="dugmic">
         
-        <ion-button expand="block" id="prijava" (click)="prijava()">Prijavi se</ion-button>
+        <ion-button expand="block" id="prijava" [disabled]="loginForm.invalid" (click)="prijava()">Prijavi se</ion-button>
         <ion-button expand="block" id="vratiSe" [routerLink]="['/home']">Nazad</ion-button>
         
     </div>
