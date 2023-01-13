@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +20,7 @@ import { PostavkeComponent } from './postavke/postavke.component';
 @NgModule({
   declarations: [AppComponent,LoginComponent,MainPageComponent,ListaPacijenataComponent,PregledZahtjevaComponent,ZahtjevComponent,RezultatiAnalizeComponent,KorisnickiNalogComponent,LicniPodaciComponent,PostavkeComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },FormsModule,ReactiveFormsModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
