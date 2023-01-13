@@ -13,12 +13,36 @@
     margin-top: 2%;
     margin-left: 15%;
     width: 70%;
+    
 }
+#lista
+{
+    background-color: #192b34;
+
+    }
+#greska
+{
+    background-color: #192b34;
+   color:var(--ion-color-danger);
+   text-align: center;
+  
+}
+
 #nesto
 {
     border-bottom: 1px solid white;
     //display: flex;
     margin-top: 2%;
+    margin-left: 0%;
+    --background:#192B34;
+    color: white;
+    font-weight: bold;
+  
+}
+#div
+{
+    padding-left: 5%;
+    background-color:#192B34;
 }
 #dugmic
 {

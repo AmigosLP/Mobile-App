@@ -6,7 +6,7 @@
   </div>
   
   <div id="login">
-     <div id="nesto">
+   <!--  <div id="nesto">
       <ion-icon name="person"></ion-icon>
       <ion-input placeholder="Medicinski ID:"></ion-input>
      </div>
@@ -15,14 +15,54 @@
       <ion-icon name="key"></ion-icon>
       <ion-input placeholder="Lozinka"></ion-input>
      
-  </div>
+     </div>
   
-  </div>
-<div id="dugmic">
+  </div>-->
 
-  <ion-button expand="block" id="prijava" [routerLink]="['/glavnaStranica']">Prijavi se</ion-button>
+
+  <form [formGroup]="loginMed" (ngsubmit)="submit()" id="formica">
+    <ion-list id="lista">
+     <ion-item id="nesto">
+         <ion-icon name="person"></ion-icon>
+         <div id="div">
+            <ion-input formControlName="medicinskiID" placeholder="Unesite Vas medicinski ID"></ion-input>
+         </div>
+
+     </ion-item>
+   <div *ngFor="let error of errorMessages.medicinskiID" id="greska">
+         <ng-container  *ngIf="medicinskiID?.hasError(error.type) && (medicinskiID?.dirty || medicinskiID?.touched)">
+            <small id="greska">{{error.message}}</small>
+         </ng-container>
+
+     </div>
+     <ion-item  id="nesto">
+
+      <ion-icon name="lock-closed-outline"></ion-icon>
+         <div id="div">
+             
+             <ion-input formControlName="lozinka" placeholder="Unesite Vasu lozinku" ></ion-input>
+          </div>
+         <!-- <ion-icon class="show-option" [name]="passwordToggleIcon" (click)="togglePassword()">[type]="showPassword?'text':'password'"</ion-icon>-->
+
+     </ion-item>
+      <div *ngFor="let error of errorMessages.lozinka" id="greska">
+         <ng-container *ngIf="lozinka!.hasError(error.type) && (lozinka!.dirty || lozinka!.touched)">
+            <small id="greska">{{error.message}}</small>
+         </ng-container>
+
+     </div>
   
-</div>
+
+    </ion-list>
+
+  </form>
+  </div>
+ <div id="dugmic">
+
+  <ion-button expand="block" id="prijava" (click)="prijava()">Prijavi se</ion-button>
+  
+ </div>
 
 
-</div>
+
+

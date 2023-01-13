@@ -19,8 +19,8 @@ import { PostavkeComponent } from './postavke/postavke.component';
 
 @NgModule({
   declarations: [AppComponent,LoginComponent,MainPageComponent,ListaPacijenataComponent,PregledZahtjevaComponent,ZahtjevComponent,RezultatiAnalizeComponent,KorisnickiNalogComponent,LicniPodaciComponent,PostavkeComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },FormsModule,ReactiveFormsModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule,ReactiveFormsModule],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
