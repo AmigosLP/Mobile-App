@@ -7,7 +7,7 @@
   
   <div id="login">
 
-    <ion-item id="nesto">
+  <!--  <ion-item id="nesto">
       <ion-icon name="person"></ion-icon>
       <div  id="div">
         <ion-input placeholder="Unesite Vase ime"></ion-input>
@@ -54,13 +54,93 @@
 
      </div>
     </ion-item>
- </div>
+  -->
+ 
+  <form [formGroup]="registrationForm" (ngsubmit)="submit()" id="formica">
+    <ion-list id="lista">
 
+      <ion-item id="nesto">
+        <ion-icon name="person"></ion-icon>
+        <div id="div">
+           <ion-input formControlName="ime" placeholder="Unesite Vase ime"></ion-input>
+        </div>
+
+    </ion-item>
+  <div *ngFor="let error of errorMessages.ime" id="greska">
+        <ng-container  *ngIf="ime?.hasError(error.type) && (ime?.dirty || ime?.touched)">
+           <small id="greska">{{error.message}}</small>
+        </ng-container>
+
+    </div>
+      <ion-item id="nesto">
+        <ion-icon name="person"></ion-icon>
+        <div id="div">
+           <ion-input formControlName="prezime" placeholder="Unesite Vase prezime"></ion-input>
+        </div>
+
+    </ion-item>
+  <div *ngFor="let error of errorMessages.prezime" id="greska">
+        <ng-container  *ngIf="prezime?.hasError(error.type) && (prezime?.dirty || prezime?.touched)">
+           <small id="greska">{{error.message}}</small>
+        </ng-container>
+
+    </div>
+      <ion-item id="nesto">
+        <ion-icon name="mail"></ion-icon>
+        <div id="div">
+           <ion-input formControlName="email" placeholder="Unesite Vas email"></ion-input>
+        </div>
+
+    </ion-item>
+  <div *ngFor="let error of errorMessages.email" id="greska">
+        <ng-container  *ngIf="email?.hasError(error.type) && (email?.dirty || email?.touched)">
+           <small id="greska">{{error.message}}</small>
+        </ng-container>
+
+    </div>
+     <ion-item id="nesto">
+         <ion-icon name="card"></ion-icon>
+         <div id="div">
+            <ion-input formControlName="brKartice" placeholder="Unesite Vas broj kartice"></ion-input>
+         </div>
+
+     </ion-item>
+   <div *ngFor="let error of errorMessages.brKartice" id="greska">
+         <ng-container  *ngIf="brKartice?.hasError(error.type) && (brKartice?.dirty || brKartice?.touched)">
+            <small id="greska">{{error.message}}</small>
+         </ng-container>
+
+     </div>
+     <ion-item  id="nesto">
+
+      <ion-icon name="lock-closed-outline"></ion-icon>
+         <div id="div">
+             
+             <ion-input formControlName="lozinka" placeholder="Unesite Vasu lozinku" [type]="showPassword?'text':'password'"></ion-input>
+            </div>
+            <ion-icon class="show-option" [name]="passwordToggleIcon" (click)="togglePassword()"></ion-icon>
+ 
+        
+
+     </ion-item>
+      <div *ngFor="let error of errorMessages.lozinka" id="greska">
+         <ng-container *ngIf="lozinka!.hasError(error.type) && (lozinka!.dirty || lozinka!.touched)">
+            <small id="greska">{{error.message}}</small>
+         </ng-container>
+
+     </div>
+  
+
+    </ion-list>
+
+  </form>
+
+  </div>
  
  <div id="dugmic">
    
-   <ion-button expand="block" id="prijava"[routerLink]="['/UspjesnoRegistrovano']">Registracija</ion-button>
-   <ion-button expand="block" id="vratiSe" [routerLink]="['/home']">Vrati se</ion-button>
+   <ion-button expand="block" id="prijava" [disabled]="registrationForm.invalid" (click)="registrujSe()">Registracija</ion-button>
+   <ion-button expand="block" id="vratiSe" [routerLink]="['/home']">Nazad</ion-button>
   </div>
   
   <div id="backToLogin">

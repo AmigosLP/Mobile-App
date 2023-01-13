@@ -15,6 +15,7 @@ h1
     margin-top: 20%;
     margin-left: 15%;
     width: 70%;
+    background-color: #192B34;
 }
 #nesto
 {
@@ -29,6 +30,16 @@ h1
     width: 70%;
     margin-left: 15%;
     
+}
+#greska
+{
+    background-color: #192B34;
+    color:var(--ion-color-danger);
+    text-align:center;
+}
+#lista
+{
+    background-color: #192B34;
 }
 #nesto
 {
