@@ -10,7 +10,8 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent  {
-
+  showPassword = false;
+  passwordToggleIcon='eye-off';
   
   get medicinskiID()
   {
@@ -51,6 +52,17 @@ loginMed=this.formBuilder.group({
   {
     console.log(this.loginMed.value);
   }
+  togglePassword():void{
+    this.showPassword=!this.showPassword;
+    if(this.passwordToggleIcon=='eye-off')
+    {
+     this.passwordToggleIcon='eye'
+    }
+    else
+    {
+     this.passwordToggleIcon='eye-off';
+    }
+  } 
   async prijava()
   {
     if(this.medicinskiID?.value=="123456" && this.lozinka?.value==="nesto")
@@ -87,5 +99,6 @@ loginMed=this.formBuilder.group({
     this.medicinskiID?.reset();
     this.lozinka?.reset();
   }
+
 
 }
