@@ -37,3 +37,12 @@
     width: 100%;
     
 }
+#odjel
+{
+    color: #036494;
+}
+
+#odjel:hover::before
+{
+    color:   blue;;
+}

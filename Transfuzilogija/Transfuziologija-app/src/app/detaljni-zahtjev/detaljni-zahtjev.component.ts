@@ -27,7 +27,7 @@ export class DetaljniZahtjevComponent implements OnInit {
     if(!this.textarea || this.textarea.length==0)
     {
      
-              this.router.navigate(['/DetaljniZahtjev']);
+      this.router.navigate(['/DetaljniZahtjev']);
         
      
   

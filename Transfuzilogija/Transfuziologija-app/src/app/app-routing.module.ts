@@ -17,6 +17,8 @@ import { LicniPodaciComponent } from './licni-podaci/licni-podaci.component';
 import { PrivatnostComponent } from './privatnost/privatnost.component';
 import { PostavkeComponent } from './postavke/postavke.component';
 import { NeuspjesnoZakazanoComponent } from './neuspjesno-zakazano/neuspjesno-zakazano.component';
+import { ZaboraviLozinkuComponent } from './zaboravi-lozinku/zaboravi-lozinku.component';
+
 
 
 const routes: Routes = [
@@ -77,8 +79,11 @@ const routes: Routes = [
   },
   {
     path:"NeuspjesnoZakazano",component:NeuspjesnoZakazanoComponent
-  }
- 
+  },
+  {
+    path:"ZaboraviLozinku",component:ZaboraviLozinkuComponent
+  },
+  
 ];
 
 @NgModule({

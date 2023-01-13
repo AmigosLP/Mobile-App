@@ -28,10 +28,13 @@ import { LicniPodaciComponent } from './licni-podaci/licni-podaci.component';
 import { PrivatnostComponent } from './privatnost/privatnost.component';
 import { PostavkeComponent } from './postavke/postavke.component';
 import { NeuspjesnoZakazanoComponent } from './neuspjesno-zakazano/neuspjesno-zakazano.component';
+import { ZaboraviLozinkuComponent } from './zaboravi-lozinku/zaboravi-lozinku.component';
+
+
 
 
 @NgModule({
-  declarations: [AppComponent,LoginPageComponent,RegistacijaComponent,OAplikacijiComponent,MainPageComponent,ZakaziTerminComponent,UspjesnoZakazanoComponent,DetaljniZahtjevComponent,PrethodniTerminiComponent,SlikaTerminComponent,IskaznicaComponent,UspjesnoRegistrovanoComponent,KorisnickiNalogComponent,LicniPodaciComponent,PrivatnostComponent,PostavkeComponent,NeuspjesnoZakazanoComponent],
+  declarations: [AppComponent,LoginPageComponent,RegistacijaComponent,OAplikacijiComponent,MainPageComponent,ZakaziTerminComponent,UspjesnoZakazanoComponent,DetaljniZahtjevComponent,PrethodniTerminiComponent,SlikaTerminComponent,IskaznicaComponent,UspjesnoRegistrovanoComponent,KorisnickiNalogComponent,LicniPodaciComponent,PrivatnostComponent,PostavkeComponent,NeuspjesnoZakazanoComponent,ZaboraviLozinkuComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule,ReactiveFormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
