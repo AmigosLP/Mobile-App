@@ -39,7 +39,7 @@ export class LoginPageComponent  {
 
 
   loginForm=this.formBuilder.group({
-      brKartice:['',[Validators.required,Validators.maxLength(6)]],
+      brKartice:['',[Validators.required,Validators.pattern('[0-9]*'),Validators.maxLength(6)]],
       lozinka:['',[Validators.required]],
 
   });

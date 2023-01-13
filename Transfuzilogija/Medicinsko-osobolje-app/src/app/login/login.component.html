@@ -40,9 +40,12 @@
       <ion-icon name="lock-closed-outline"></ion-icon>
          <div id="div">
              
-             <ion-input formControlName="lozinka" placeholder="Unesite Vasu lozinku" ></ion-input>
+             <ion-input formControlName="lozinka" placeholder="Unesite Vasu lozinku"  [type]="showPassword?'text':'password'"></ion-input>
           </div>
-         <!-- <ion-icon class="show-option" [name]="passwordToggleIcon" (click)="togglePassword()">[type]="showPassword?'text':'password'"</ion-icon>-->
+    
+          <ion-icon class="show-option" id="ikona"[name]="passwordToggleIcon" (click)="togglePassword()">[type]="showPassword?'text':'password'"</ion-icon>
+
+        
 
      </ion-item>
       <div *ngFor="let error of errorMessages.lozinka" id="greska">
@@ -56,6 +59,9 @@
     </ion-list>
 
   </form>
+  <div id="zaboraviliLozinku">
+   <ion-button fill="clear">Zaboravili ste lozinku?</ion-button>
+</div>
   </div>
  <div id="dugmic">
 

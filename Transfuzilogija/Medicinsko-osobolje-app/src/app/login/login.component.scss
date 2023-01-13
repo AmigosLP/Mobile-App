@@ -1,6 +1,8 @@
 :host
 {
   background-color: #192B34;
+  
+  
 }
 #slika
 {
@@ -10,7 +12,7 @@
 }
 #login
 {
-    margin-top: 2%;
+    margin-top: 0%;
     margin-left: 15%;
     width: 70%;
     
@@ -19,7 +21,7 @@
 {
     background-color: #192b34;
 
-    }
+}
 #greska
 {
     background-color: #192b34;
@@ -37,17 +39,30 @@
     --background:#192B34;
     color: white;
     font-weight: bold;
+   
   
+}
+#zaboraviliLozinku
+{
+    text-align: right;
+    margin-left: 35%;
+}
+#ikona
+{
+  
+    padding-left: 65%;
+    
 }
 #div
 {
     padding-left: 5%;
     background-color:#192B34;
+
 }
 #dugmic
 {
     text-align: center;
-    margin-top: 3%;
+    margin-top: 1%;
     width: 70%;
     margin-left: 15%;
     
