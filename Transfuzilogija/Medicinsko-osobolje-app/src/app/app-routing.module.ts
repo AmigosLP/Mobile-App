@@ -8,6 +8,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { PostavkeComponent } from './postavke/postavke.component';
 import { PregledZahtjevaComponent } from './pregled-zahtjeva/pregled-zahtjeva.component';
 import { RezultatiAnalizeComponent } from './rezultati-analize/rezultati-analize.component';
+import { ZaboraviLozinku2Component } from './zaboravi-lozinku2/zaboravi-lozinku2.component';
 import { ZahtjevComponent } from './zahtjev/zahtjev.component';
 
 const routes: Routes = [
@@ -46,6 +47,9 @@ const routes: Routes = [
   },
   {
     path:'postavke',component:PostavkeComponent
+  },
+  {
+    path:"ZaboraviLozinku2",component:ZaboraviLozinku2Component
   }
 
 ];

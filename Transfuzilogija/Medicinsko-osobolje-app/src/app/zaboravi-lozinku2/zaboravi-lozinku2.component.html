@@ -1,0 +1,49 @@
+<div id="sve">
+  <div id="glavni">
+  
+      
+      <ion-card>
+        <ion-card-header>
+          <div id="reset">
+
+            <ion-card-title id="reset">Reset lozinke</ion-card-title>
+          </div>
+         
+        </ion-card-header>
+  
+        <ion-card-content>
+          Molimo Vas unesite vas legitimni Email racun kako bi poslali resetovali lozinku
+        </ion-card-content>
+        <div id="lozinka">
+          
+            
+          <textarea [(ngModel)]="textarea" name="text" id="zahtjev" cols="40" rows="2" placeholder="Molimo vas unesite vas email"></textarea>
+  
+        </div>
+      
+        <br>
+        
+          <ion-button expand="block" id="ZatraziLink" (click)="prihvati()" fill="clear"> *Zatrazi link*
+            
+            </ion-button>
+          <!-- <ion-button expand="block" id="prihvati" (click)="prihvati()" >Potvrdi zahtjev</ion-button>-->
+       
+      </ion-card>
+
+
+   
+
+    <div id="dugmic">
+
+    
+      <ion-button expand="block" id="VratiSeNazad" [routerLink]="['/login']">Vrati se nazad</ion-button>
+
+    </div>  
+
+  </div>
+
+  
+
+  
+
+</div>

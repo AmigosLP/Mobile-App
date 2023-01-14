@@ -16,9 +16,10 @@ import { RezultatiAnalizeComponent } from './rezultati-analize/rezultati-analize
 import { KorisnickiNalogComponent } from './korisnicki-nalog/korisnicki-nalog.component';
 import { LicniPodaciComponent } from './licni-podaci/licni-podaci.component';
 import { PostavkeComponent } from './postavke/postavke.component';
+import { ZaboraviLozinku2Component } from './zaboravi-lozinku2/zaboravi-lozinku2.component';
 
 @NgModule({
-  declarations: [AppComponent,LoginComponent,MainPageComponent,ListaPacijenataComponent,PregledZahtjevaComponent,ZahtjevComponent,RezultatiAnalizeComponent,KorisnickiNalogComponent,LicniPodaciComponent,PostavkeComponent],
+  declarations: [AppComponent,LoginComponent,MainPageComponent,ListaPacijenataComponent,PregledZahtjevaComponent,ZahtjevComponent,RezultatiAnalizeComponent,KorisnickiNalogComponent,LicniPodaciComponent,PostavkeComponent,ZaboraviLozinku2Component],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule,ReactiveFormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

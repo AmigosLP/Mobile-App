@@ -9,8 +9,15 @@
   </div>
 
   <div id="dugmic">
+    <form action="demo.php" method="post" enctype="multipart/form-data">
 
-    <ion-button expand="block" id="Dodajdokument" (click)="dodajDokument()">Dodaj dokument<ion-icon name="document-outline"></ion-icon></ion-button>
+      Select a file to upload 
+      <br>
+      <input type="file" name="fuResume" id="fuResume">
+      
+      <!--<ion-button expand="block" id="Dodajdokument" (click)="dodajDokument()">Dodaj dokument<ion-icon name="document-outline"></ion-icon></ion-button>-->
+
+    </form>
     <ion-button expand="block" id="Sacuvaj" (click)="sacuvajDokument()">Sacuvaj<ion-icon name="save"></ion-icon></ion-button>
   
   </div>
