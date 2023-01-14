@@ -3,6 +3,7 @@ import { async } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
+
 @Component({
   selector: 'app-rezultati-analize',
   templateUrl: './rezultati-analize.component.html',
@@ -10,9 +11,11 @@ import { AlertController } from '@ionic/angular';
 })
 export class RezultatiAnalizeComponent implements OnInit {
 
+  //private file: File;
   constructor(private alertController:AlertController,private router:Router) { }
 
   ngOnInit() {}
+
 
   async dodajDokument() {
     const alert = await this.alertController.create({
@@ -34,9 +37,9 @@ export class RezultatiAnalizeComponent implements OnInit {
     ]
     });
 
-  
-
     await alert.present();
+  
+  
   }
   async sacuvajDokument()
   {
