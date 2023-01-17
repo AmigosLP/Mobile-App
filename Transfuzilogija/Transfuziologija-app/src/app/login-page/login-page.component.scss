@@ -11,12 +11,12 @@
 
 #slika
 {
-    margin-top: 5%;
+    margin-top: 0%;
     
 }
 #login
 {
-    margin-top: 10%;
+    margin-top: 0%;
     margin-left: 15%;
     width: 70%;
     background-color: #192b34;
@@ -31,7 +31,7 @@
 {
     border-bottom: 1px solid white;
    // display: flex;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 0%;
     --background:#192B34;
     color: white;
@@ -49,6 +49,7 @@
 #lista
 {
     background-color: #192b34;
+ 
 
 }
 #registracija
@@ -58,7 +59,7 @@
         font-size: 12px;
         color: #d9d9d9;
     }
-    margin-top: 3%;
+    margin-top: 0%;
     
 }
 #pomjeri
@@ -68,16 +69,17 @@
 #div
 {
     padding-left: 5%;
+   
 }
-.item
+/*.item
 {
     background:#192B34;
     
-}
+}*/
 #dugmic
 {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 0%;
     width: 70%;
     margin-left: 15%;
     
@@ -97,4 +99,14 @@
     margin-top: 5%;
     font-family: "poppins";
 }
-
+.zapamti
+{
+    padding-top: 20%;
+    font-family: 'poppins';
+    background-color: green;
+}
+label {
+    color: gray;
+    padding-left: 1%;
+    font-size: .875rem;
+  }
