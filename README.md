@@ -18,15 +18,27 @@ Regarding medical staff, after logging in, they can review today's patients and 
 - **Patient login**: Card Number: 123456, Password: nesto
 - **Medical staff login**: Medical ID: 123456, Password: nesto
 
-![Patient Login](https://github.com/Siocic/Mobile-App/assets/77838860/a5c65cff-7903-4235-83dc-5860744a2512)
-![Medical Staff Login](https://github.com/Siocic/Mobile-App/assets/77838860/8f2ca3ec-a65d-47a6-b2ca-51c758c43252)
+Patient Login
+<div align="center">
+  <img src="https://github.com/Siocic/Mobile-App/assets/77838860/a5c65cff-7903-4235-83dc-5860744a2512" alt="Your Image Description">
+</div>
+Medical Staff Login
+<div align="center">
+  <img src="https://github.com/Siocic/Mobile-App/assets/77838860/8f2ca3ec-a65d-47a6-b2ca-51c758c43252" alt="Your Image Description">
+</div>
+
 
 ### Blood Draw Scheduling
 
 Patients choose a date and time for their appointment. If they select January 20, 2023, at 14:30, they will receive a message indicating that the time slot is already filled, and they should choose another.
 
-![Scheduling](https://github.com/Siocic/Mobile-App/assets/77838860/9dabe4a4-8f0d-4d53-aa3a-b9fd310dc134)
+
+<div align="center">
+  <img src="https://github.com/Siocic/Mobile-App/assets/77838860/9dabe4a4-8f0d-4d53-aa3a-b9fd310dc134" alt="Your Image Description">
+</div>
 
 ### Blood Donor Card
 
-![Blood Donor Card](https://github.com/Siocic/Mobile-App/assets/77838860/d1938037-5d8b-48f0-a7b4-2dc1b2251938)
+<div align="center">
+  <img src="https://github.com/Siocic/Mobile-App/assets/77838860/d1938037-5d8b-48f0-a7b4-2dc1b2251938" alt="Your Image Description">
+</div>
